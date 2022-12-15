@@ -1,0 +1,79 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css);
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-color: rgb(135,137,173);
+  text-align: center;
+  
+}
+
+.search-box{
+  display: flex;
+  margin: 10px auto;
+  border: none;
+}
+
+.search-term{
+  padding: 12px;
+  font-size: 1.3rem;
+  border: 2px solid white;
+}
+
+.search-term:hover {
+  border: 2px solid rgb(47,48,73);
+}
+
+.search-button{
+  background-color: rgb(47,48,73);
+  color: white;
+  height: 50px;
+  margin: 5px;
+  border: none;
+}
+
+.search-button:hover{
+  background-color: rgb(62,84,118);
+  cursor:pointer;
+
+}
+
+
+.card-parent{
+  background-color: rgb(47,48,73);
+  color: white;
+  padding: 20px;
+  max-width: 40%;
+  margin: auto;
+}
+
+.weather-icon{
+  width: 100px;
+  height: 100px;
+}
+
+.weather-info{
+  padding: 20px;
+  justify-content: center;
+
+  font-size: 2.5em;
+}
+
+.temperature{
+  padding: 15px 20px;
+
+}
+.description{
+  padding: 15px 20px;
+  background-color: rgb(135,137,173);
+
+}
+
+.weather-condition{
+  color: rgb(47,48,73) ;
+}
+
+.date{
+  font-size: 1.5rem;
+}
