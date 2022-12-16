@@ -11,7 +11,9 @@ function Card({ tempInfo }) {
     sunset,
     humidity,
     pressure,
-    speed
+    speed,
+    temp_min, 
+    temp_max,
   } = tempInfo;
 
   let sec = sunset;
@@ -53,6 +55,10 @@ function Card({ tempInfo }) {
         </div>
           <div className="temperature">
             <span>{temp} °C</span>
+            <span>
+              <p>Min. { temp_min}</p>
+              <p>Max. { temp_max}</p>
+            </span>
           </div>
 
           <div className="description">
