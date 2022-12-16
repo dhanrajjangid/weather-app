@@ -74,6 +74,17 @@ body{
   align-items: center;
 }
 
+.temperature{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.weather-info p{
+  margin-left: 20px;
+  font-size: 1rem;
+  color: rgb(176, 175, 175);
+}
+
 @media only screen and (max-width: 886px) {
   .weather-info {
     flex-direction: column;
