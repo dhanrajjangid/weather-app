@@ -42,7 +42,6 @@ body{
   background-color: rgb(47,48,73);
   color: white;
   height: 50px;
-  margin: 5px;
   border: none;
 }
 
@@ -59,8 +58,47 @@ body{
   color: white;
   padding: 20px;
   font-size: 2.0rem;
-  
+  width: 50vw;
 }
+
+@media only screen and (max-width: 886px) {
+  .card-parent {
+    width: 90vw;
+  }
+}
+
+.weather-info{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 886px) {
+  .weather-info {
+    flex-direction: column;
+  }
+}
+
+.date{
+  color: rgb(252, 197, 197);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.weather-details{
+  padding: 10px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 886px) {
+  .weather-details {
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+}
+
 
 
 
