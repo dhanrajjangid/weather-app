@@ -11,7 +11,7 @@ function Search() {
 
       const res = await fetch(url);
       const data = await res.json();
-      const { temp, humidity, pressure } = data.main;
+      const { temp, temp_min, temp_max, humidity, pressure } = data.main;
       const { description } = data.weather[0];
       const { name } = data;
       const { country, sunset } =data.sys;
@@ -19,7 +19,7 @@ function Search() {
       
       console.log(sunset)
       const myNewWeatherInfo = {
-        temp, description, name, country, sunset, humidity, pressure, speed
+        temp, description, name, country, sunset, humidity, pressure, speed, temp_min, temp_max,
       };
         
       setTempInfo(myNewWeatherInfo);
