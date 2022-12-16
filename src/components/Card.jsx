@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import WeatherDetails from "./WeatherDetails";
 
 function Card({ tempInfo }) {
   const [weatherState, setWeatherState] = useState("")
